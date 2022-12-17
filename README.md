@@ -1,5 +1,5 @@
 # The sx prop of MUI system for all HTML elements for custom styling
-MUI prefer (sx) prop for styling, but custom html elemnt can be created as (<Box component="div">text here </Box>) in MUI which may be confuse in readibilty.
+MUI prefer (sx) prop for styling, but custom html elemnt can be created with (Box component="div") component in MUI which may be confuse in readibilty.
 
 MUI System's sx prop lets you avoid writing unnecessary styled-component code, and instead define styles directly within the component itself. This is especially useful for one-off components with custom designs.
 
