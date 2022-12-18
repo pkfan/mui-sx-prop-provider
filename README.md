@@ -58,4 +58,79 @@ const Div = useSXpropProvider('div');
 * avoid using of styled-components API
 * avoid using of style.css or style.scss for each component in MUI for custom components
 
+## Example
+
+### (Box) component from Material UI
+decrease readibility of code.
+
+```js
+import { Box } from '@mui/material';
+
+<Box
+  component="div"
+  sx={{
+    width: '400px',
+    height: '400px',
+    background: 'grey',
+    display: 'flex',
+    flexWrap: 'wrap',
+    padding: '10px',
+    margin: '50px',
+    gap: '10px',
+    '& > span': {
+      width: '100px',
+      height: '100px',
+      background: 'red',
+      borderRadius: '10px',
+    },
+  }}
+>
+  <Box component="span">Item</Box>
+  <Box component="span">Item</Box>
+  <Box component="span">Item</Box>
+  <Box component="span">Item</Box>
+  <Box component="span">Item</Box>
+  <Box component="span">Item</Box>
+  <Box component="span">Item</Box>
+  <Box component="span">Item</Box>
+</Box>
+```
+
+### Custom Html elements with (sx prop) wraper
+increase readibility of code.
+
+```js
+import { Section, Span } from './sxHtmlElements';
+
+<Section
+  sx={{
+    width: '400px',
+    height: '400px',
+    background: 'grey',
+    display: 'flex',
+    flexWrap: 'wrap',
+    padding: '10px',
+    margin: '50px',
+    gap: '10px',
+    '& > span': {
+      width: '100px',
+      height: '100px',
+      background: 'red',
+      borderRadius: '10px',
+    },
+  }}
+>
+  <Span>Item</Span>
+  <Span>Item</Span>
+  <Span>Item</Span>
+  <Span>Item</Span>
+  <Span>Item</Span>
+  <Span>Item</Span>
+  <Span>Item</Span>
+  <Span>Item</Span>
+</Section>
+```
+
+
+
 #### Don't forget to give star on this repository, so that other can find it easily and use.
