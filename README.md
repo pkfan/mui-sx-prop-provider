@@ -60,7 +60,7 @@ const Div = useSXpropProvider('div');
 
 ## Example
 
-### (Box) component from Material UI
+#### (Box) component from Material UI
 decrease readibility of code.
 
 ```js
@@ -96,7 +96,7 @@ import { Box } from '@mui/material';
 </Box>
 ```
 
-### Custom Html elements with (sx prop) wraper
+#### Custom Html elements with (sx prop) wraper
 increase readibility of code.
 
 ```js
