@@ -11,21 +11,33 @@ MUI System's sx prop lets you avoid writing unnecessary styled-component code, a
  * remeber all html element is in capatilize form after (sx) props decorator
  * e.g. a -> A, div -> Div, span -> Span, header -> Header
 
-### Usage of html.js
+### Usage of (sxHtmlElements.js)
 ```js
 import { Span, Div, Img, H1 } from './html';
 
-<Span sx={{ padding: '10px', background: 'black', color: 'white' }}>
+<Span 
+  sx={{ padding: '10px', background: 'black', color: 'white' }}
+>
    Span with SX prop styles
 </Span>
 
-<Div sx={{ padding: '5px', width: '200px', height: '200px', border: '1px solid red' }}>
+<Div 
+   sx={{ padding: '5px', width: '200px', height: '200px', border: '1px solid red' }}
+ >
   Div with SX prop styles
 </Div>
 
-<Img sx={{ width: '400px', display: 'flex' }} src="pkfan-profile.jpg" alt="pkfan" />
+<Img 
+  sx={{ width: '400px', display: 'flex' }} 
+  src="pkfan-profile.jpg" 
+  alt="pkfan" 
+/>
 
-<H1 sx={{ fontWeight: '600', fontSize: '18px', color: 'blue' }}>h1, h2, h3, h4, h5, h6</H1>
+<H1 
+   sx={{ fontWeight: '600', fontSize: '18px', color: 'blue' }}
+ >
+    h1, h2, h3, h4, h5, h6
+ </H1>
 
 ```
 ### Usage of (useSXpropProvider) custom hook
@@ -34,7 +46,9 @@ import useSXpropProvider from './useSXpropProvider';
 
 const Div = useSXpropProvider('div');
 
-<Div sx={{ padding: '5px', width: '200px', height: '200px', border: '1px solid red' }}>
+<Div 
+   sx={{ padding: '5px', width: '200px', height: '200px', border: '1px solid red' }}
+>
   Div with SX prop styles
 </Div>
 
